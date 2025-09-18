@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class GradeCalculation {
 
     public void GradeCalc() {
-        int marks[] = new int[4];  // only 4 subjects
+        int marks[] = new int[6];
         float total = 0, avg;
 
         try (Scanner scanner = new Scanner(System.in)) {
-            // Enter marks for 4 subjects
-            for (int i = 0; i < 4; i++) {
+            // Enter marks for 6 subjects
+            for (int i = 0; i < 6; i++) {
                 System.out.print("Enter Marks of Subject " + (i + 1) + ": ");
                 marks[i] = scanner.nextInt();
                 total += marks[i];
@@ -18,7 +18,7 @@ public class GradeCalculation {
         }
 
         // Calculate average
-        avg = total / 4;
+        avg = total / 6;
 
         // Print grade as per outline
         System.out.print("The student Grade is: ");
